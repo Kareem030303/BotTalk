@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NPC World Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🌍 NPC World Hub</h1>
+  <p>Click a character to talk</p>
+
+  <div class="npc-grid">
+
+    <div class="npc" onclick="selectNPC('coach')">🥊 Coach Marcus</div>
+    <div class="npc" onclick="selectNPC('villain')">😈 The Shadow</div>
+    <div class="npc" onclick="selectNPC('scientist')">🧠 Dr. Nova</div>
+
+  </div>
+
+  <div class="chat-box">
+    <h2 id="npcName">Choose someone</h2>
+    <div id="chatLog"></div>
+
+    <input id="userInput" placeholder="Say something...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
